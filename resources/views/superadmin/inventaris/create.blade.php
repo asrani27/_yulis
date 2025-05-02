@@ -13,7 +13,7 @@
                 <div class="card-body">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Tanggal Masuk</label>
-                        <input type="text" name="tanggal_masuk" value="{{\Carbon\Carbon::now()->format('Y-m-d')}}"
+                        <input type="date" name="tanggal_masuk" value="{{\Carbon\Carbon::now()->format('Y-m-d')}}"
                             class="form-control" required>
                     </div>
                     <div class="form-group">

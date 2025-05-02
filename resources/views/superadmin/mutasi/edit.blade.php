@@ -13,7 +13,7 @@
                 <div class="card-body">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Tanggal</label>
-                        <input type="text" name="tanggal" value="{{$data->tanggal}}" class="form-control" required>
+                        <input type="date" name="tanggal" value="{{$data->tanggal}}" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Nomor Mutasi</label>
