@@ -32,7 +32,7 @@
                             <td>{{$item->nip}}</td>
                             <td>{{$item->nama}}</td>
                             <td>{{$item->jkel}}</td>
-                            <td>{{$item->tgl_lahir}}</td>
+                            <td>{{\Carbon\Carbon::parse($item->tgl_lahir)->format('d M Y')}}</td>
                             <td>{{$item->jabatan}}</td>
                             <td class="text-right">
 

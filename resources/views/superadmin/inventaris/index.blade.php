@@ -32,7 +32,7 @@
                         @foreach ($data as $key => $item)
                         <tr style="font-size:14px">
                             <td>{{$key + 1}}</td>
-                            <td>{{$item->tanggal_masuk}}</td>
+                            <td>{{\Carbon\Carbon::parse($item->tanggal_masuk)->format('d M Y')}}</td>
                             <td>{{$item->nomor}}</td>
                             <td>{{$item->barang == null ? '' : $item->barang->kode}}</td>
                             <td>{{$item->barang == null ? '' : $item->barang->nama}}</td>
